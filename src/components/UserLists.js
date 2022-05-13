@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./UserLists.css";
 
-function UserLists() {
+function UserLists(props) {
+  console.log(props);
   return (
     <div className="container">
       <div className="profile">
