@@ -4,15 +4,19 @@ import UserLists from "./components/UserLists";
 import axios from "axios";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
-      setUser(response.data);
-    });
+    const getUsers = async () =>
+      await axios
+        .get("https://jsonplaceholder.typicode.com/users")
+        .then((response) => {
+          setUsers(response.data);
+        });
+    getUsers();
   }, []);
 
-  return <UserLists user={user} />;
+  return <UserLists key={users.id} users={users} />;
 }
 
 export default App;
