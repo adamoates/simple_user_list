@@ -10,8 +10,8 @@ function App() {
     const getUsers = async () =>
       await axios
         .get("https://jsonplaceholder.typicode.com/users")
-        .then((response) => {
-          setUsers(response.data);
+        .then((res) => {
+          setUsers(res.data);
         });
     getUsers();
   }, []);

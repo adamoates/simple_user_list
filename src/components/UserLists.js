@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./UserLists.css";
 
 function UserLists({ users }) {
@@ -8,7 +7,7 @@ function UserLists({ users }) {
         <div className="profile" key={user.id}>
           <div className="img">
             <img
-              src="https://i.pravatar.cc/150?img=1"
+              src={`https://i.pravatar.cc/150?img=${user.id}`}
               alt="profile-pic"
               height="100px"
               width="100px"
@@ -17,9 +16,7 @@ function UserLists({ users }) {
           <div className="details">
             <p>id: {user.id}</p>
             <p>Name: {user.name}</p>
-            <p>
-              Email: <a href="#">{user.email}</a>
-            </p>
+            <p>Email: {user.email}</p>
           </div>
         </div>
       ))}
