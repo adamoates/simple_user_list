@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./UserLists.css";
 
 function UserLists() {
@@ -15,7 +16,9 @@ function UserLists() {
         <div className="details">
           <p>id: 1</p>
           <p>Name: Leanne Graham</p>
-          <p>Email: Sincere@april.biz</p>
+          <p>
+            Email: <a href="#">Sincere@april.biz</a>
+          </p>
         </div>
       </div>
 
@@ -31,7 +34,9 @@ function UserLists() {
         <div className="details">
           <p>id: 2</p>
           <p>Name: Ervin Howell</p>
-          <p>Email: Shanna@melissa.tv</p>
+          <p>
+            Email: <a href="#">Shanna@melissa.tv</a>
+          </p>
         </div>
       </div>
 
@@ -47,7 +52,9 @@ function UserLists() {
         <div className="details">
           <p>id: 3</p>
           <p>Name: Clementine Bauch</p>
-          <p>Email: Nathan@yesenia.net</p>
+          <p>
+            Email: <a href="#">Nathan@yesenia.net</a>
+          </p>
         </div>
       </div>
     </div>
