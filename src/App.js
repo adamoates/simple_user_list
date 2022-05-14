@@ -11,7 +11,10 @@ function App() {
       await axios
         .get("https://jsonplaceholder.typicode.com/users")
         .then((res) => {
-          setUsers(res.data);
+          return setUsers(res.data);
+        })
+        .catch((error) => {
+          return error;
         });
     getUsers();
   }, []);
