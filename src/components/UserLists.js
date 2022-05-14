@@ -19,7 +19,7 @@ function UserLists({ users }) {
         <h1>Simple Users List</h1>
         <button className="btn" onClick={sort}>
           Sort By Id{" "}
-          <i>{orderBy === "asc" ? <FaArrowUp /> : <FaArrowDown />}</i>
+          <i>{orderBy === "asc" ? <FaArrowDown /> : <FaArrowUp />}</i>
         </button>
       </div>
 
